@@ -23,12 +23,12 @@ const data: productType[] = [
   {
     primaryColor: "#2E150A",
     logo: "/images/nutella/logo.png",
-    image: "/images/nutella/main2.avif"
+    image: "/images/nutella/main2.webp"
   },
   {
     primaryColor: "#CE1907",
     logo: "/images/kinder/logo.png",
-    image: "/images/kinder/main.avif"
+    image: "/images/kinder/main.webp"
   },
 ]
 
