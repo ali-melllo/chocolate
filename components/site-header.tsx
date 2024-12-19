@@ -5,9 +5,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { Icons } from "./icons"
 
-export function SiteHeader() {
+export function SiteHeader(props: { logo: string, color: string, fade: boolean }) {
   return (
-    <header className="sticky top-4 z-40 mx-auto w-11/12 rounded-[2em] border-b bg-[#0455fb] text-white shadow-xl md:w-8/12">
+    <header style={{ background: props.color }} className="sticky top-4 z-40 mx-auto w-11/12 rounded-[2em] border-b text-white shadow-xl transition-all duration-500 md:w-8/12">
 
       <div className="flex h-16 w-full items-center justify-between px-5">
         <div className="flex gap-6 ">
@@ -16,10 +16,11 @@ export function SiteHeader() {
           </Link>
         </div>
 
-        <div className="flex w-4/12 items-center justify-center ">
+        <div className="flex w-4/12 items-center justify-center">
           <Image
+            className={`transition-all duration-200 ${props.fade ? "-translate-y-full opacity-0" : "opacity-100"}`}
             alt={'oreo'}
-            src={'/images/oreo/logo.png'}
+            src={props.logo}
             width={130}
             height={130}
           />
@@ -30,7 +31,7 @@ export function SiteHeader() {
             <ThemeToggle />
           </nav>
           <Link className="flex gap-2 text-xs font-bold md:gap-3 md:text-lg" type={'tel'} href={'09046329661'}>
-            <Icons.PhoneCall className="size-4 md:size-6"/>
+            <Icons.PhoneCall className="size-4 md:size-6" />
             تماس
           </Link>
         </div>
