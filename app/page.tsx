@@ -28,7 +28,7 @@ const data: productType[] = [
   {
     primaryColor: "#CE1907",
     logo: "/images/kinder/logo.png",
-    image: "/images/kinder/main.webp"
+    image: "/images/kinder/main.png"
   },
 ]
 
