@@ -24,6 +24,7 @@ export function SiteHeader(props: { logo: string, color: string, fade: boolean }
             src={props.logo}
             width={130}
             height={130}
+            unoptimized
           />
         </div>
 

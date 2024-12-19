@@ -4,6 +4,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    unoptimized: true, // Use this for debugging
+  },
 }
 
 export default nextConfig
