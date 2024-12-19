@@ -36,8 +36,10 @@ export default function Page() {
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [fade, setFade] = useState<boolean>(false);
+  const [mounted, setMounted] = useState<boolean>(false);
 
   useEffect(() => {
+    setMounted(true);
     const interval = setInterval(() => {
       setFade(true);
       setTimeout(() => {
@@ -48,6 +50,11 @@ export default function Page() {
 
     return () => clearInterval(interval);
   }, []);
+
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <div className="relative flex min-h-screen flex-col overflow-hidden transition-all duration-300">
