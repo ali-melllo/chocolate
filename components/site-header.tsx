@@ -13,7 +13,7 @@ export function SiteHeader(props: { logo: string, color: string, fade: boolean }
       <div className="flex h-16 w-full items-center justify-between px-5">
         <div className="flex gap-6 ">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="inline-block pt-1 text-base font-extrabold md:text-2xl">{siteConfig.name}</span>
+            <span className="inline-block pt-1 text-sm mr-3 font-extrabold md:text-2xl">{siteConfig.name}</span>
           </Link>
         </div>
 

@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Choco Land",
+  name: "Choco West",
   description: "بهترین فروشگاه آنلاین برای خرید انواع شکلات، آب‌نبات، قهوه و محصولات خوشمزه دیگر با کیفیت عالی و قیمت مناسب. تجربه‌ای شیرین و متفاوت از خرید آنلاین.",
   mainNav: [
     // {
