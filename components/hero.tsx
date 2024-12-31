@@ -1,6 +1,5 @@
 'use client'
 
-import { data } from "@/app/page";
 import { useEffect, useRef, useState } from "react";
 import { SiteHeader } from "./site-header";
 import TypingAnimation from "./ui/typing-animation";
@@ -8,6 +7,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { Icons } from "./icons";
 import Image from "next/image";
+import { data } from "@/lib/data";
 
 export default function MainHero() {
 
@@ -28,6 +28,9 @@ export default function MainHero() {
         return () => clearInterval(interval);
     }, []);
 
+    if (!mounted) {
+        return null
+    }
 
     return (
         <>

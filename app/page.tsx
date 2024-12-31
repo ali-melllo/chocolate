@@ -1,52 +1,8 @@
 'use client'
 
 import MainHero from "@/components/hero";
-import { Icons } from "@/components/icons";
-import { SiteHeader } from "@/components/site-header";
-import { Button } from "@/components/ui/button";
-import TypingAnimation from "@/components/ui/typing-animation";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-
-type productType = {
-  primaryColor: string,
-  logo: string,
-  image: string
-}
-
-export const data: productType[] = [
-  {
-    primaryColor: "#0455fb",
-    logo: "/images/oreo/logo.png",
-    image: "/images/oreo/3d-oreo.png"
-  },
-  {
-    primaryColor: "#2E150A",
-    logo: "/images/nutella/logo.png",
-    image: "/images/nutella/hero.webp"
-  },
-  {
-    primaryColor: "#CE1907",
-    logo: "/images/kinder/logo.png",
-    image: "/images/kinder/main.png"
-  },
-  {
-    primaryColor: "#3d993d",
-    logo: "/images/pringles/logo.png",
-    image: "/images/pringles/hero.png"
-  },
-  {
-    primaryColor: "#013fa1",
-    logo: "/images/haribo/logo.png",
-    image: "/images/haribo/hero.webp"
-  },
-  {
-    primaryColor: "#826eaf",
-    logo: "/images/milka/logo.webp",
-    image: "/images/milka/hero.webp"
-  },
-]
 
 
 const staticDataOreo = {
@@ -546,7 +502,7 @@ export default function Page() {
 
           {/* Sticky Div */}
           <div
-            className="sticky top-5 z-20 flex size-full flex-col items-center justify-start overflow-hidden rounded- rounded-b-xl shadow-2xl transition-all duration-300 md:top-48 md:shadow-none lg:w-2/4"
+            className="rounded- sticky top-5 z-20 flex size-full flex-col items-center justify-start overflow-hidden rounded-b-xl shadow-2xl transition-all duration-300 md:top-48 md:shadow-none lg:w-2/4"
           >
             <svg className="-mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path fill="#013fa1" fill-opacity="1" d="M0,128L12,112C24,96,48,64,72,64C96,64,120,96,144,96C168,96,192,64,216,69.3C240,75,264,117,288,133.3C312,149,336,139,360,144C384,149,408,171,432,186.7C456,203,480,213,504,224C528,235,552,245,576,229.3C600,213,624,171,648,144C672,117,696,107,720,112C744,117,768,139,792,160C816,181,840,203,864,208C888,213,912,203,936,213.3C960,224,984,256,1008,234.7C1032,213,1056,139,1080,117.3C1104,96,1128,128,1152,138.7C1176,149,1200,139,1224,122.7C1248,107,1272,85,1296,80C1320,75,1344,85,1368,85.3C1392,85,1416,75,1428,69.3L1440,64L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
