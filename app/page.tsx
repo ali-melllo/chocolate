@@ -1,6 +1,8 @@
 'use client'
 
 import MainHero from "@/components/hero";
+import { Card } from "@/components/ui/card";
+import { Car, Instagram, LocateFixedIcon, LocateIcon, MapPin, Phone, PhoneCall, Pin, Send, Tv, Youtube } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
@@ -268,27 +270,21 @@ export default function Page() {
 
           {/* Sticky Div */}
           <div
-            className="sticky top-5 z-20 flex size-full flex-col items-center justify-start overflow-hidden rounded-[25%] rounded-b-xl shadow-2xl transition-all duration-300 md:top-48 md:shadow-none lg:w-2/4"
+            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
           >
-            <svg className="-mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#0455fb" fill-opacity="1" d="M0,128L12,112C24,96,48,64,72,64C96,64,120,96,144,96C168,96,192,64,216,69.3C240,75,264,117,288,133.3C312,149,336,139,360,144C384,149,408,171,432,186.7C456,203,480,213,504,224C528,235,552,245,576,229.3C600,213,624,171,648,144C672,117,696,107,720,112C744,117,768,139,792,160C816,181,840,203,864,208C888,213,912,203,936,213.3C960,224,984,256,1008,234.7C1032,213,1056,139,1080,117.3C1104,96,1128,128,1152,138.7C1176,149,1200,139,1224,122.7C1248,107,1272,85,1296,80C1320,75,1344,85,1368,85.3C1392,85,1416,75,1428,69.3L1440,64L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
-            </svg>
             <div
               style={{ background: "#0455fb", color: "white" }}
-              className="flex w-full flex-col items-center p-5">
-              <div className="flex  w-8/12 items-center justify-center md:w-full">
+              className="flex w-full items-center justify-center ">
+              <div className="flex w-8/12 items-center justify-center md:w-6/12">
                 <Image
                   src={"/images/oreo/logo.png"}
-                  className="max-h-64 rounded"
+                  className="rounded pb-5"
                   width={500}
-                  height={200}
+                  height={300}
                   alt="kloud"
                 />
               </div>
             </div>
-            <svg className="hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#0455fb" fill-opacity="1" d="M0,128L12,112C24,96,48,64,72,64C96,64,120,96,144,96C168,96,192,64,216,69.3C240,75,264,117,288,133.3C312,149,336,139,360,144C384,149,408,171,432,186.7C456,203,480,213,504,224C528,235,552,245,576,229.3C600,213,624,171,648,144C672,117,696,107,720,112C744,117,768,139,792,160C816,181,840,203,864,208C888,213,912,203,936,213.3C960,224,984,256,1008,234.7C1032,213,1056,139,1080,117.3C1104,96,1128,128,1152,138.7C1176,149,1200,139,1224,122.7C1248,107,1272,85,1296,80C1320,75,1344,85,1368,85.3C1392,85,1416,75,1428,69.3L1440,64L1440,0L1428,0C1416,0,1392,0,1368,0C1344,0,1320,0,1296,0C1272,0,1248,0,1224,0C1200,0,1176,0,1152,0C1128,0,1104,0,1080,0C1056,0,1032,0,1008,0C984,0,960,0,936,0C912,0,888,0,864,0C840,0,816,0,792,0C768,0,744,0,720,0C696,0,672,0,648,0C624,0,600,0,576,0C552,0,528,0,504,0C480,0,456,0,432,0C408,0,384,0,360,0C336,0,312,0,288,0C264,0,240,0,216,0C192,0,168,0,144,0C120,0,96,0,72,0C48,0,24,0,12,0L0,0Z"></path>
-            </svg>
           </div>
         </div>
 
@@ -346,27 +342,21 @@ export default function Page() {
 
           {/* Sticky Div */}
           <div
-            className="sticky top-5 z-20 flex size-full flex-col items-center justify-start overflow-hidden rounded-[25%] rounded-b-xl shadow-2xl transition-all duration-300 md:top-48 md:shadow-none lg:w-2/4"
+            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
           >
-            <svg className="-mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#2E150A" fill-opacity="1" d="M0,128L12,112C24,96,48,64,72,64C96,64,120,96,144,96C168,96,192,64,216,69.3C240,75,264,117,288,133.3C312,149,336,139,360,144C384,149,408,171,432,186.7C456,203,480,213,504,224C528,235,552,245,576,229.3C600,213,624,171,648,144C672,117,696,107,720,112C744,117,768,139,792,160C816,181,840,203,864,208C888,213,912,203,936,213.3C960,224,984,256,1008,234.7C1032,213,1056,139,1080,117.3C1104,96,1128,128,1152,138.7C1176,149,1200,139,1224,122.7C1248,107,1272,85,1296,80C1320,75,1344,85,1368,85.3C1392,85,1416,75,1428,69.3L1440,64L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
-            </svg>
             <div
               style={{ background: "#2E150A", color: "white" }}
-              className="flex w-full flex-col items-center p-5">
-              <div className="flex  w-8/12 items-center justify-center md:w-full">
+              className="flex w-full items-center justify-center ">
+              <div className="flex h-48 w-8/12 items-center justify-center md:w-6/12">
                 <Image
                   src={"/images/nutella/logo.png"}
-                  className="max-h-64 rounded"
+                  className=" pb-5"
                   width={500}
-                  height={200}
+                  height={500}
                   alt="kloud"
                 />
               </div>
             </div>
-            <svg className="hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#2E150A" fill-opacity="1" d="M0,128L12,112C24,96,48,64,72,64C96,64,120,96,144,96C168,96,192,64,216,69.3C240,75,264,117,288,133.3C312,149,336,139,360,144C384,149,408,171,432,186.7C456,203,480,213,504,224C528,235,552,245,576,229.3C600,213,624,171,648,144C672,117,696,107,720,112C744,117,768,139,792,160C816,181,840,203,864,208C888,213,912,203,936,213.3C960,224,984,256,1008,234.7C1032,213,1056,139,1080,117.3C1104,96,1128,128,1152,138.7C1176,149,1200,139,1224,122.7C1248,107,1272,85,1296,80C1320,75,1344,85,1368,85.3C1392,85,1416,75,1428,69.3L1440,64L1440,0L1428,0C1416,0,1392,0,1368,0C1344,0,1320,0,1296,0C1272,0,1248,0,1224,0C1200,0,1176,0,1152,0C1128,0,1104,0,1080,0C1056,0,1032,0,1008,0C984,0,960,0,936,0C912,0,888,0,864,0C840,0,816,0,792,0C768,0,744,0,720,0C696,0,672,0,648,0C624,0,600,0,576,0C552,0,528,0,504,0C480,0,456,0,432,0C408,0,384,0,360,0C336,0,312,0,288,0C264,0,240,0,216,0C192,0,168,0,144,0C120,0,96,0,72,0C48,0,24,0,12,0L0,0Z"></path>
-            </svg>
           </div>
         </div>
 
@@ -424,27 +414,21 @@ export default function Page() {
 
           {/* Sticky Div */}
           <div
-            className="sticky top-5 z-20 flex size-full flex-col items-center justify-start overflow-hidden rounded-[25%] rounded-b-xl shadow-2xl transition-all duration-300 md:top-48 md:shadow-none lg:w-2/4"
+            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
           >
-            <svg className="-mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#3d993d" fill-opacity="1" d="M0,128L12,112C24,96,48,64,72,64C96,64,120,96,144,96C168,96,192,64,216,69.3C240,75,264,117,288,133.3C312,149,336,139,360,144C384,149,408,171,432,186.7C456,203,480,213,504,224C528,235,552,245,576,229.3C600,213,624,171,648,144C672,117,696,107,720,112C744,117,768,139,792,160C816,181,840,203,864,208C888,213,912,203,936,213.3C960,224,984,256,1008,234.7C1032,213,1056,139,1080,117.3C1104,96,1128,128,1152,138.7C1176,149,1200,139,1224,122.7C1248,107,1272,85,1296,80C1320,75,1344,85,1368,85.3C1392,85,1416,75,1428,69.3L1440,64L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
-            </svg>
             <div
               style={{ background: "#3d993d", color: "white" }}
-              className="flex w-full flex-col items-center p-5">
-              <div className="flex w-5/12 items-center justify-center md:w-full">
+              className="flex w-full items-center justify-center ">
+              <div className="flex h-48 w-8/12 items-center justify-center p-5 md:w-6/12">
                 <Image
                   src={"/images/pringles/logo.png"}
-                  className="max-h-48 rounded"
+                  className=" pb-5"
                   width={500}
-                  height={200}
+                  height={500}
                   alt="kloud"
                 />
               </div>
             </div>
-            <svg className="hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#3d993d" fill-opacity="1" d="M0,128L12,112C24,96,48,64,72,64C96,64,120,96,144,96C168,96,192,64,216,69.3C240,75,264,117,288,133.3C312,149,336,139,360,144C384,149,408,171,432,186.7C456,203,480,213,504,224C528,235,552,245,576,229.3C600,213,624,171,648,144C672,117,696,107,720,112C744,117,768,139,792,160C816,181,840,203,864,208C888,213,912,203,936,213.3C960,224,984,256,1008,234.7C1032,213,1056,139,1080,117.3C1104,96,1128,128,1152,138.7C1176,149,1200,139,1224,122.7C1248,107,1272,85,1296,80C1320,75,1344,85,1368,85.3C1392,85,1416,75,1428,69.3L1440,64L1440,0L1428,0C1416,0,1392,0,1368,0C1344,0,1320,0,1296,0C1272,0,1248,0,1224,0C1200,0,1176,0,1152,0C1128,0,1104,0,1080,0C1056,0,1032,0,1008,0C984,0,960,0,936,0C912,0,888,0,864,0C840,0,816,0,792,0C768,0,744,0,720,0C696,0,672,0,648,0C624,0,600,0,576,0C552,0,528,0,504,0C480,0,456,0,432,0C408,0,384,0,360,0C336,0,312,0,288,0C264,0,240,0,216,0C192,0,168,0,144,0C120,0,96,0,72,0C48,0,24,0,12,0L0,0Z"></path>
-            </svg>
           </div>
         </div>
 
@@ -502,33 +486,88 @@ export default function Page() {
 
           {/* Sticky Div */}
           <div
-            className="rounded- sticky top-5 z-20 flex size-full flex-col items-center justify-start overflow-hidden rounded-b-xl shadow-2xl transition-all duration-300 md:top-48 md:shadow-none lg:w-2/4"
+            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
           >
-            <svg className="-mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#013fa1" fill-opacity="1" d="M0,128L12,112C24,96,48,64,72,64C96,64,120,96,144,96C168,96,192,64,216,69.3C240,75,264,117,288,133.3C312,149,336,139,360,144C384,149,408,171,432,186.7C456,203,480,213,504,224C528,235,552,245,576,229.3C600,213,624,171,648,144C672,117,696,107,720,112C744,117,768,139,792,160C816,181,840,203,864,208C888,213,912,203,936,213.3C960,224,984,256,1008,234.7C1032,213,1056,139,1080,117.3C1104,96,1128,128,1152,138.7C1176,149,1200,139,1224,122.7C1248,107,1272,85,1296,80C1320,75,1344,85,1368,85.3C1392,85,1416,75,1428,69.3L1440,64L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z"></path>
-            </svg>
             <div
               style={{ background: "#013fa1", color: "white" }}
-              className="flex w-full flex-col items-center p-5">
-              <div className="flex w-5/12 items-center justify-center md:w-full">
+              className="flex w-full items-center justify-center ">
+              <div className="flex h-48 w-8/12 items-center justify-center p-5 md:w-6/12">
                 <Image
                   src={"/images/haribo/logo.png"}
-                  className="max-h-48 rounded"
+                  className=" pb-5"
                   width={500}
-                  height={200}
+                  height={500}
                   alt="kloud"
                 />
               </div>
             </div>
-            <svg className="hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#013fa1" fill-opacity="1" d="M0,128L12,112C24,96,48,64,72,64C96,64,120,96,144,96C168,96,192,64,216,69.3C240,75,264,117,288,133.3C312,149,336,139,360,144C384,149,408,171,432,186.7C456,203,480,213,504,224C528,235,552,245,576,229.3C600,213,624,171,648,144C672,117,696,107,720,112C744,117,768,139,792,160C816,181,840,203,864,208C888,213,912,203,936,213.3C960,224,984,256,1008,234.7C1032,213,1056,139,1080,117.3C1104,96,1128,128,1152,138.7C1176,149,1200,139,1224,122.7C1248,107,1272,85,1296,80C1320,75,1344,85,1368,85.3C1392,85,1416,75,1428,69.3L1440,64L1440,0L1428,0C1416,0,1392,0,1368,0C1344,0,1320,0,1296,0C1272,0,1248,0,1224,0C1200,0,1176,0,1152,0C1128,0,1104,0,1080,0C1056,0,1032,0,1008,0C984,0,960,0,936,0C912,0,888,0,864,0C840,0,816,0,792,0C768,0,744,0,720,0C696,0,672,0,648,0C624,0,600,0,576,0C552,0,528,0,504,0C480,0,456,0,432,0C408,0,384,0,360,0C336,0,312,0,288,0C264,0,240,0,216,0C192,0,168,0,144,0C120,0,96,0,72,0C48,0,24,0,12,0L0,0Z"></path>
-            </svg>
           </div>
         </div>
-
-
-
       </div>
+
+      {/* ///////////////  */}
+      {/* Address Section  */}
+
+      <div className="mx-auto mt-48 flex w-11/12 flex-col justify-between p-5 md:w-10/12 md:flex-row">
+        <Card className="rounded-3xl border-none shadow-xl">
+          <Image
+            className="size-96 max-h-80 rounded-3xl md:max-h-96"
+            src={'/images/location.jpg'}
+            alt={'Address'}
+            width={500}
+            height={500}
+          />
+        </Card>
+
+        <div className="mt-5 flex w-full flex-col items-end justify-between gap-y-5 p-2 text-sm font-bold md:mt-0 md:w-5/12 md:p-5 md:text-xl">
+          <div className="flex items-center justify-end text-nowrap">
+            <p className="mr-3 text-nowrap text-right">
+              میدان پونک ، پاساژ بوستان ، راهرو اردیبهشت
+            </p>
+            <MapPin />
+          </div>
+          <div className="flex items-center justify-end">
+            <p className="mr-3 ">
+              ارسال فوری درب منزل
+            </p>
+            <Car />
+          </div>
+          <div className="flex items-center justify-end">
+            <p className="mr-3 ">
+              0912 375 9426
+            </p>
+            <Phone />
+          </div>
+          <div className="flex items-center justify-end">
+            <p className="text-right text-sm font-normal md:mt-5 md:text-lg">
+              بهترین فروشگاه آنلاین برای خرید انواع شکلات، آب‌نبات، قهوه و محصولات خوشمزه دیگر با کیفیت عالی و قیمت مناسب. تجربه‌ای شیرین و متفاوت
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <footer>
+        <div className="absolute bottom-28 flex h-10 w-full justify-between px-10 md:inset-x-[37.5%] md:bottom-20 md:w-3/12 md:px-0">
+          <span className="flex size-16 items-center justify-center rounded-full border-4 border-[#0455fb] bg-white shadow-2xl transition-all duration-200 hover:scale-105 md:size-20">
+            <Instagram color="#0455fb" className="size-10" />
+          </span>
+          <span className="flex size-16 items-center justify-center rounded-full border-4 border-[#0455fb] bg-white shadow-2xl transition-all duration-200 hover:scale-105 md:size-20">
+            <Send color="#0455fb" className="size-10" />
+          </span>
+          <span className="flex size-16 items-center justify-center rounded-full border-4 border-[#0455fb] bg-white shadow-2xl transition-all duration-200 hover:scale-105 md:size-20">
+            <PhoneCall color="#0455fb" className="size-10" />
+          </span>
+          <span className="flex size-16 items-center justify-center rounded-full border-4 border-[#0455fb] bg-white shadow-2xl transition-all duration-200 hover:scale-105 md:size-20">
+            <Youtube color="#0455fb" className="size-12" />
+          </span>
+        </div>
+        <svg className="h-64 md:h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#0455fb" fill-opacity="1" d="M0,96L26.7,112C53.3,128,107,160,160,165.3C213.3,171,267,149,320,133.3C373.3,117,427,107,480,117.3C533.3,128,587,160,640,197.3C693.3,235,747,277,800,277.3C853.3,277,907,235,960,234.7C1013.3,235,1067,277,1120,250.7C1173.3,224,1227,128,1280,90.7C1333.3,53,1387,75,1413,85.3L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+        </svg>
+        <p className="absolute bottom-2 left-2 text-white">Copyright © Choco West All Rights Reserved 2024</p>
+      </footer>
 
     </div>
   )

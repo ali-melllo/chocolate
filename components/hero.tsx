@@ -39,11 +39,48 @@ export default function MainHero() {
                 logo={data[currentIndex].logo}
                 fade={fade} />
 
+            <div className="container absolute">
+                <div className="bubble">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div className="bubble">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div className="bubble">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div className="bubble">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div className="bubble">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <div className="relative flex size-full flex-1 flex-col">
                 <section className="relative flex w-full flex-col justify-center">
                     <div className="mx-auto flex w-10/12 flex-col items-end gap-y-5 px-5 pt-10 text-right md:pt-20">
                         <TypingAnimation style={{ color: data[currentIndex].primaryColor }} className="mx-auto text-xl font-bold md:mx-0 md:text-4xl">فروشگاه شکلات بوستان</TypingAnimation>
-                        <TypingAnimation className="h-12 w-full text-center text-sm text-gray-400 md:w-5/12 md:text-right md:text-lg">{"بهترین فروشگاه آنلاین برای خرید انواع شکلات، آب‌ نبات، قهوه و محصولات خوشمزه دیگر با کیفیت عالی و قیمت مناسب. تجربه‌ای شیرین و متفاوت از خرید آنلاین"}</TypingAnimation>
+                        <TypingAnimation className="h-12 w-full text-center text-sm text-gray-600 md:w-5/12 md:text-right md:text-lg">{"بهترین فروشگاه آنلاین برای خرید انواع شکلات، آب‌ نبات، قهوه و محصولات خوشمزه دیگر با کیفیت عالی و قیمت مناسب. تجربه‌ای شیرین و متفاوت از خرید آنلاین"}</TypingAnimation>
                         <Button style={{ background: data[currentIndex].primaryColor }} className="mt-10 w-full rounded-[2em] py-3 text-white !transition-all !duration-500 md:w-3/12">
                             <Link className="flex gap-3 text-lg font-bold" type={'tel'} href={'09046329661'}>
                                 <Icons.PhoneCall />
