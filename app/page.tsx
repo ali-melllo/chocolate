@@ -1,6 +1,7 @@
 'use client'
 
 import MainHero from "@/components/hero";
+import { MarqueeDemo } from "@/components/MarqueDemo";
 import { Card } from "@/components/ui/card";
 import { Car, Instagram, LocateFixedIcon, LocateIcon, MapPin, Phone, PhoneCall, Pin, Send, Tv, Youtube } from "lucide-react";
 import Image from "next/image";
@@ -217,6 +218,8 @@ export default function Page() {
 
       <MainHero />
 
+
+      <MarqueeDemo />
 
       <div className={`flex size-full flex-col overflow-x-clip px-5`}>
         <div className="flex w-full flex-col-reverse md:flex-row md:gap-x-24 md:p-5 md:py-20 lg:p-0 ">
