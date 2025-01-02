@@ -270,7 +270,7 @@ export default function Page() {
 
           {/* Sticky Div */}
           <div
-            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
+            className="sticky top-20 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-3xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
           >
             <div
               style={{ background: "#0455fb", color: "white" }}
@@ -342,7 +342,7 @@ export default function Page() {
 
           {/* Sticky Div */}
           <div
-            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
+            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-3xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
           >
             <div
               style={{ background: "#2E150A", color: "white" }}
@@ -350,7 +350,7 @@ export default function Page() {
               <div className="flex h-48 w-8/12 items-center justify-center md:w-6/12">
                 <Image
                   src={"/images/nutella/logo.png"}
-                  className=" pb-5"
+                  className="pb-10 md:pb-5"
                   width={500}
                   height={500}
                   alt="kloud"
@@ -414,7 +414,7 @@ export default function Page() {
 
           {/* Sticky Div */}
           <div
-            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
+            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-3xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
           >
             <div
               style={{ background: "#3d993d", color: "white" }}
@@ -422,7 +422,7 @@ export default function Page() {
               <div className="flex h-48 w-8/12 items-center justify-center p-5 md:w-6/12">
                 <Image
                   src={"/images/pringles/logo.png"}
-                  className=" pb-5"
+                  className=" pb-10 md:pb-5"
                   width={500}
                   height={500}
                   alt="kloud"
@@ -486,7 +486,7 @@ export default function Page() {
 
           {/* Sticky Div */}
           <div
-            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
+            className="sticky top-14 z-20 flex size-full h-36 flex-col items-center justify-start overflow-hidden rounded-3xl shadow-2xl transition-all duration-300 md:top-48 md:h-44 md:shadow-none lg:w-2/4"
           >
             <div
               style={{ background: "#013fa1", color: "white" }}
@@ -521,7 +521,7 @@ export default function Page() {
 
         <div className="mt-5 flex w-full flex-col items-end justify-between gap-y-5 p-2 text-sm font-bold md:mt-0 md:w-5/12 md:p-5 md:text-xl">
           <div className="flex items-center justify-end text-nowrap">
-            <p className="mr-3 text-nowrap text-right">
+            <p className="mr-3 text-nowrap text-right text-xs">
               میدان پونک ، پاساژ بوستان ، راهرو اردیبهشت
             </p>
             <MapPin />
